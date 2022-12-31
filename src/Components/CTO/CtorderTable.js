@@ -1,19 +1,22 @@
 import React from 'react';
-import "./ctotable.css";
+import "../CTO/ctorderTable.css";
 
-export const CtoTable = () =>{
+export const CtorderTable = () =>{
   return(
-    <section className='userReports'>
-        <div className="URtitile" style={{display:"inline-flex"}}>
-             <h5>Total number of items(1)</h5>
-             <button style={{backgroundColor:"rgb(223, 202, 85)",color:"white",borderColor:"rgb(223, 202, 85)",borderRadius:"4px"}}>RE-READ MASTER DATA</button>
-             <button style={{backgroundColor:"green",color:"white",borderRadius:"4px",borderColor:"green",marginLeft:"10px"}}>CREATE WO</button>
+    <>
+    <div className='ctoTableContainer'>
+        <div className="ctoTableTitle" >
+            <div className='ctoTT'><h5>Total number of items(1)</h5></div>
+            <div className='ctoTTbtn'>
+                <button className='ctoTTbtnRead' >RE-READ MASTER DATA</button>
+                <button className='ctoTTbtnCreate' >CREATE WO</button>
+            </div>
         </div>
         <br />
-        <div className="TObody">
-        <form method="POST" >
+        <div className="ctoTableBody">
+        <form >
             <table>
-                <thead>
+                <thead className='ctoThead'>
                     <tr>
                         <th><input type="checkbox"></input></th>
                         <th scope="col"></th>
@@ -33,7 +36,7 @@ export const CtoTable = () =>{
                         
                     </tr>
                 </thead>
-                <tbody style={{columnHeight:"20px"}}>
+                <tbody className='ctoTbody' style={{columnHeight:"20px"}}>
                   <tr>
                     <td><input type="checkbox"></input></td>
                     <td></td>
@@ -79,12 +82,12 @@ export const CtoTable = () =>{
 
         </div>
 
-    </section>
+    </div>
     
-    
+    </>
 
   );
     
     }
 
-export default CtoTable;
+export default CtorderTable;
