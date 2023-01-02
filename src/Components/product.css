@@ -3,5 +3,36 @@
     padding-bottom:20px;
     margin: 2.5%;
     background-color: rgb(196, 250, 232);
+    border-radius: 10px;
     
+    
+}
+.butn1{
+    width:80px;
+    border-radius:8px;
+    border-width:1px;
+    border-color:red;
+    background-color:white;
+    color:red;
+}
+.butn1:hover{
+    background-color:red;
+    color:white;
+    border-radius:8px;
+    font-weight: 600;
+}
+.butn2{
+    width: 60px;
+    border-radius:4.5px;
+    border-width:1px;
+    border-color:green;
+    background-color:green;
+    color:white;
+}
+.butn2:hover{
+    background-color:rgb(32, 247, 32);
+    border-color:rgb(32, 247, 32) ;
+    color:white;
+    border-radius:8px;
+    font-weight: 600;
 }

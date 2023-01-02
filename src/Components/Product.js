@@ -7,7 +7,7 @@ export const Product = () =>{
   return (
     <div className="producttablecontainer">
       <div style={{textAlign:"center",color:"white",height:"50px",display:"flex",justifyContent:"center",
-        columnWidth:"100%",backgroundColor:"rgb(190, 54, 54)"}}className="titlebar">
+        columnWidth:"100%",backgroundColor:"rgb(190, 54, 54)",borderTopLeftRadius:"10px",borderTopRightRadius:"10px"}}className="titlebar">
         <h5 style={{paddingTop:"10px"}}>Product/Country Assignment</h5><IoMdCloseCircleOutline style={{marginTop:"15px",width:"fit-content",height:"18px",color:"white",cursor:"pointer"}}/>
       </div>
       <Table striped bordered hover >
@@ -54,8 +54,8 @@ export const Product = () =>{
     </tbody>
     </Table>
     <div className='buttons' style={{display:"inline-flex",marginTop:"10px",gap:"20%"}}>
-    <button style={{width:"80px",borderRadius:"4.5px",borderWidth:"1px",borderColor:"red",backgroundColor:"white",color:"red"}}>DELETE</button>
-    <button style={{width:"60px",borderRadius:"4.5px",borderWidth:"1px",borderColor:"green",backgroundColor:"green",color:"white"}} >DONE</button>
+    <button className='butn1'>DELETE</button>
+    <button className='butn2'>DONE</button>
     </div>
     </div>
 

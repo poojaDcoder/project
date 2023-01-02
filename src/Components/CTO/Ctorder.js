@@ -92,7 +92,7 @@ const Ctorder = () => {
                          <label htmlFor="" className={CTO.ctoformLabel3}>Enter Variant</label>
                          </th>
                          <th>
-                         <label htmlFor="" className={CTO.ctoformLabel3}>*Enter Quantity</label>
+                         <label htmlFor="" className={CTO.ctoformLabel3}><span style={{color:"red"}}>*</span>Enter Quantity</label>
                          </th>
                     </tr>
                     </thead>
