@@ -1,22 +1,22 @@
 import React from 'react';
-import "../CTO/ctorderTable.css";
+import table from "../CTO/ctorderTable.module.css";
 
 export const CtorderTable = () =>{
   return(
     <>
-    <div className='ctoTableContainer'>
-        <div className="ctoTableTitle" >
-            <div className='ctoTT'><h5>Total number of items(1)</h5></div>
-            <div className='ctoTTbtn'>
-                <button className='ctoTTbtnRead' >RE-READ MASTER DATA</button>
-                <button className='ctoTTbtnCreate' >CREATE WO</button>
+    <div className={table.ctoTableContainer}>
+        <div className={table.ctoTableTitle} >
+            <div className={table.ctoTT}><h5>Total number of items(1)</h5></div>
+            <div className={table.ctoTTbtn}>
+                <button className={table.ctoTTbtnRead} >RE-READ MASTER DATA</button>
+                <button className={table.ctoTTbtnCreate} >CREATE WO</button>
             </div>
         </div>
         <br />
-        <div className="ctoTableBody">
+        <div className={table.ctoTableBody}>
         <form >
             <table>
-                <thead className='ctoThead'>
+                <thead className={table.ctoThead}>
                     <tr>
                         <th><input type="checkbox"></input></th>
                         <th scope="col"></th>
@@ -36,7 +36,7 @@ export const CtorderTable = () =>{
                         
                     </tr>
                 </thead>
-                <tbody className='ctoTbody' style={{columnHeight:"20px"}}>
+                <tbody className={table.ctoTbody}style={{columnHeight:"20px"}}>
                   <tr>
                     <td><input type="checkbox"></input></td>
                     <td></td>

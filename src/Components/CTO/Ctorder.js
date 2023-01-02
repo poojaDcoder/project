@@ -1,5 +1,5 @@
 import React from 'react';
-import "../CTO/ctorder.css";
+import CTO from "../CTO/ctorder.module.css";
 import {BsUpcScan} from "react-icons/bs";
 import { useState } from 'react';
 import CtorderTable from './CtorderTable';
@@ -13,27 +13,27 @@ const Ctorder = () => {
   return (
     <>
     <div>
-        <h3>Create Transformation Order</h3>
+        <h3>Create Transformation  Order</h3>
     </div>
-    <div className='ctoContainer'>
-        <div className="huNum">
-        <label className='huLabel' htmlFor="hu"><BsUpcScan size={20} style={{marginBottom:"5px"}}/> HU NUMBER</label>
+    <div className={CTO.ctoContainer}>
+        <div className={CTO.huNum}>
+        <label className={CTO.huLabel} htmlFor="hu"><BsUpcScan size={20} style={{marginBottom:"5px"}}/> HU NUMBER</label>
             <input type="text" name='hu'/>
         </div>
-        <div className="ctoFormContainer">
-            <form action="" className="ctoMainform">
+        <div className={CTO.ctoFormContainer}>
+            <form action="" className={CTO.ctoMainform}>
                 
-                <div className='formRow1' style={{width:"100%",columnGap:"20px"}}>
+                <div className={CTO.formRow1} style={{width:"100%",columnGap:"20px"}}>
                     <thead>
                     <tr>
                         <th>
-                            <label htmlFor="toNumber" className="ctoformLabel1">Transform Order Number #</label>
+                            <label htmlFor="toNumber" className={CTO.ctoformLabel1}>Transform Order Number #</label>
                         </th>
                         <th>
-                            <label htmlFor="toStatus" className="ctoformLabel1">Transform Order Status</label>
+                            <label htmlFor="toStatus" className={CTO.ctoformLabel1}>Transform Order Status</label>
                         </th>
                          <th>
-                         <label htmlFor="salesOrder" className="ctoformLabel1"><span style={{color:"red"}}>*</span> Sales Order#</label>
+                         <label htmlFor="salesOrder" className={CTO.ctoformLabel1}><span style={{color:"red"}}>*</span> Sales Order#</label>
                          </th>
                     </tr>
                     </thead>
@@ -47,77 +47,77 @@ const Ctorder = () => {
                 </div>
 
                 {/* FORM ROW 2 starts here---- */}
-                <div className='formRow2'>
+                <div className={CTO.formRow2}>
                 <thead>
                     <tr>
                         <th>
-                            <label htmlFor="enterDelivery" className="ctoformLabel">Enter Delivery</label>
+                            <label htmlFor="enterDelivery" className={CTO.ctoformLabel}>Enter Delivery</label>
                         </th>
                         <th>
-                            <label htmlFor="shipCountry" className="ctoformLabel"><span style={{color:"red"}}>*</span>Ship to Country</label>
+                            <label htmlFor="shipCountry" className={CTO.ctoformLabel}><span style={{color:"red"}}>*</span>Ship to Country</label>
                         </th>
                          <th>
-                         <label htmlFor="sites" className="ctoformLabel">Transformation Site</label>
+                         <label htmlFor="sites" className={CTO.ctoformLabel}>Transformation Site</label>
                          </th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td><input type="text" name='enterDelivery' className='ctoformInput' /></td>
-                        <td><select  className='ctoCountry' id="sites" name="shipCountry" required>
+                        <td><input type="text" name='enterDelivery' className={CTO.ctoformInput} /></td>
+                        <td><select  className={CTO.ctoCountry} id="sites" name="shipCountry" required>
                                 <option value="111">Poland</option>
                                 <option value="222">France</option>
                                 <option value="333">Russia</option>
                                 <option value="444">Ukraine</option>
                         </select></td>
-                        <td><input type="text" name='enterDelivery' className='ctoformInput' /></td>
+                        <td><input type="text" name='enterDelivery' className={CTO.ctoformInput} /></td>
                     </tr>
                     </tbody>
                 </div>
 
                 {/* FORM ROW 3 starts here---- */}
-                <div className='formRow3'>
+                <div className={CTO.formRow3}>
                 <thead>
                     <tr>
                         <th>
-                            <label htmlFor="" className="ctoformLabel3"><span style={{color:"red"}}>*</span>Enter GTIN</label>
+                            <label htmlFor="" className={CTO.ctoformLabel3}><span style={{color:"red"}}>*</span>Enter GTIN</label>
                         </th>
                         <th>
-                        <label htmlFor="" className="ctoformLabel3"><span style={{color:"red"}}>*</span>Enter Batch</label>
+                        <label htmlFor="" className={CTO.ctoformLabel3}><span style={{color:"red"}}>*</span>Enter Batch</label>
                         </th>
                          <th>
-                         <label htmlFor="" className="ctoformLabel3"><span style={{color:"red"}}>*</span>Enter Material</label>
+                         <label htmlFor="" className={CTO.ctoformLabel3}><span style={{color:"red"}}>*</span>Enter Material</label>
                          </th>
                          <th>
-                         <label htmlFor="" className="ctoformLabel3">Enter Variant</label>
+                         <label htmlFor="" className={CTO.ctoformLabel3}>Enter Variant</label>
                          </th>
                          <th>
-                         <label htmlFor="" className="ctoformLabel3">*Enter Quantity</label>
+                         <label htmlFor="" className={CTO.ctoformLabel3}>*Enter Quantity</label>
                          </th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td><input type="text" className='ctoFormInput3' required/></td>
-                        <td><input type="text" className='ctoFormInput3' required/></td>
-                        <td><select className='ctoCountry' id="sites" name="sites">
+                        <td><input type="text" className={CTO.ctoFormInput3} required/></td>
+                        <td><input type="text" className={CTO.ctoFormInput3} required/></td>
+                        <td><select className={CTO.ctoCountry} id="sites" name="sites">
                                 <option value="111">Poland</option>
                                 <option value="222">France</option>
                                 <option value="333">Russia</option>
                                 <option value="444">Ukraine</option>
                         </select></td>
-                        <td><input type="text" className='ctoFormInput3' /></td>
-                        <td><input type="text" className='ctoFormInput3' /></td>
+                        <td><input type="text" className={CTO.ctoFormInput3} /></td>
+                        <td><input type="text" className={CTO.ctoFormInput3} /></td>
                     </tr>
                     </tbody>
                 </div>
-                <div className="saveBtn">
-                <button class="btn btn-primary" onClick={toggleHandlerCTO}>SAVE</button>
+                <div className={CTO.saveBtn}>
+                <button style={{fontWeight:"bold"}} class="btn btn-primary" onClick={toggleHandlerCTO}>SAVE</button>
                 </div>
                 
             </form>
         </div>
-        <div className="outputTable">
+        <div className={CTO.outputTable}>
         {toggleCTO?<CtorderTable/>:null}
         </div>
     </div>
