@@ -1,0 +1,92 @@
+.productcont{
+    width:500px;
+    padding-bottom:20px;
+    margin-left:400px;
+    margin-top:50px;
+    background-image:url(https://t4.ftcdn.net/jpg/01/37/57/49/360_F_137574978_zQ5OsEYsizBPKE1FT2NWQTjdUoFpCsR1.jpg
+    );
+    border-radius: 10px;
+    align-content: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Unna&display=swap');
+.tabhead1,.tabhead2{
+    width: 350px;
+    text-align: center;
+    font-family: 'Unna', serif;
+    
+}
+tr:first-child {
+    width: 300px;
+    height: 30px;
+    
+}
+/* tr:nth-child(2){
+    width: 300px;
+    height: 25px;
+} */
+
+/* tr:nth-child(3){
+    width: 300px;
+    height: 25px;
+}
+tr:nth-child(4){
+    width: 300px;
+    height: 25px;
+} */
+.butn1{
+    width:80px;
+    height:20px;
+    border-radius:8px;
+    border-width:1px;
+    background-color:rgb(189, 6, 6);
+    color:white;
+    border: none;
+}
+.butn1:hover{
+    background-color:red;
+    color:white;
+    border-radius:8px;
+    font-weight: 600;
+}
+.butn2{
+    width: 60px;
+    height: 20px;
+    border-radius:8px;
+    border-width:1px;
+    border :none;
+    background-color:rgb(30, 190, 30);
+    color:white;
+}
+.butn2:hover{
+    background-color:rgb(32, 247, 32);
+    border-color:rgb(32, 247, 32) ;
+    color:white;
+    border-radius:8px;
+    font-weight: 600;
+}
+/*  */
+.productcont{
+    width: 500px;
+    display: grid;
+    background-image: url(https://t4.ftcdn.net/jpg/01/37/57/49/360_F_137574978_zQ5OsEYsizBPKE1FT2NWQTjdUoFpCsR1.jpg);
+    border-radius: 10px;
+    align-content: center;
+    padding-bottom:20px;
+    margin-left:400px;
+    margin-top:50px;
+    grid-template-rows:60px 1fr ;
+}
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
+.protitle{
+    display: grid;
+    grid-template-columns: 85% 15%;
+    padding-top: 20px;
+    padding-left: 50px;
+    color: white;
+    font-family: 'Prosto One', cursive;
+}
+.protable{
+    width: 500px;
+    justify-content: center;
+    
+}

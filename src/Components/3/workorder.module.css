@@ -1,0 +1,68 @@
+.title{
+    width: 100%;
+    height: 40px;
+    background-color: brown;
+}
+.ctoContainer{
+    width: 100%;
+    height:100vh;
+    display: grid;
+    grid-template-rows: 50px 300px 1fr ;
+    justify-content: left;
+    padding-top: 10px;
+}
+.huNum{
+    display: inline-block;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 14px;
+}
+.huNum>input{
+    border-radius: 2px;
+}
+.huNum>input:hover{
+    border-radius: 2px;
+    border: 2px solid orange;
+    background-color: rgb(10, 169, 169);
+    color: white;
+}
+.huLabel{
+    width: 200px;
+    padding-top: 3px;
+    background-color: teal;
+    color: white;
+    margin-right: 10px;
+    padding-left: 10px;
+    border-radius: 2px;
+}
+.butn1{
+    width:80px;
+    border-radius:8px;
+    border-width:1px;
+    border-color:red;
+    background-color:white;
+    color:red;
+    margin-left: 10px;
+}
+.butn1:hover{
+    background-color:red;
+    color:white;
+    border-radius:8px;
+    font-weight: 600;
+}
+.butn2{
+    width: 140px;
+    border-radius:4.5px;
+    border-width:1px;
+    border-color:green;
+    background-color:green;
+    color:white;
+    margin-left: 10px;
+}
+.butn2:hover{
+    background-color:rgb(32, 247, 32);
+    border-color:rgb(32, 247, 32) ;
+    color:white;
+    border-radius:8px;
+    font-weight: 600;
+}
