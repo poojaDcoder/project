@@ -1,0 +1,105 @@
+.topmain{
+    /* clip-path: polygon(58% 65%, 100% 41%, 100% 47%, 100% 100%, 0% 100%); */
+    height: 0;
+    width: 0;
+   border-left: 400px solid transparent;
+    border-bottom: 150px solid rgb(225, 145, 171);
+   
+}
+.topmain1{
+    height: 450px;
+    width: 400px;
+    background-color: rgb(225, 145, 171) ;
+}
+
+.inner1{
+    height: 200px;
+    width: 350px;
+    background-color: rgb(243, 227, 207);
+    margin-left: 25px;
+   font-size: 17px;
+    text-align: left;
+}
+/* .inner2{
+    height: 40px;
+    width: 50px;
+    margin-left: 50px;
+    margin-top: 5px;
+} */
+.topcorner{
+    height: 180px;
+    width: 360px;
+    border-bottom-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    background-color:rgb(225, 145, 171);
+    padding-left: -10%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+ 
+    
+}
+.topinner h2{
+            margin-top: -80px;
+            margin-left: 10px;
+            color:black;
+            font-weight: bolder;
+            font-family: 'Times New Roman', Times, serif;
+}
+.icon{
+    margin-top: 90px;
+    margin-right: 50%;
+    color: white;
+}
+.topnav{
+    display: flex;
+    flex-direction: row;
+    color: rgb(240, 234, 234);
+    margin-left: 50%;
+    gap: 30px;
+    margin-top: -150px;
+}
+.top123{
+    height: 800px;
+    width: 1636px;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 200px;
+    background-color: rgb(24, 24, 223);
+    margin-top: -250px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: 5% 30% 30% 30% 5%;
+    margin-top: 100px;
+}
+/* .secondcard{
+    margin-left: 200px;
+}
+.thirdcard{
+    margin-left: 500px;
+} */
+body{
+    /* background-image: url(https://t4.ftcdn.net/jpg/01/38/56/69/360_F_138566972_EEvQi7Ujx3h64eghs0zsgbmMcjh3gf2l.jpg); */
+    background-image: url(https://i.pinimg.com/550x/6a/44/cc/6a44ccfb14767a3822627869884ef7f7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+   
+}
+.secondcard .inner1{
+    width: 350px;
+    height: 165px;
+}
+
+.inner4 img{
+    height: 150px;
+    width: 250px;
+    margin-top: 15px;
+}
+.inner3 img{
+    height: 150px;
+    width: 250px;
+    margin-top: 15px;
+   
+}
+.inner1 img{
+    height: 150px;
+    width: 250px;
+}
